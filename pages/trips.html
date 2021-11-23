@@ -8,6 +8,55 @@
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <link rel="shortcut icon" type="image/jpg" href="../images/trips-favicon.ico"/>
 </head>
+
+<style type="text/css">
+    .container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  left: auto;
+  right: auto;
+
+}
+
+.image {
+
+  text-align: center;
+  opacity: 1;
+  display: block;
+  
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  border-radius: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #808080;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+   
+</style>
 <body class="is-preload">
     <div id="wrapper">
         <nav id="nav">
@@ -28,14 +77,34 @@
         </header>
         <div id="main">
             <section id="trips" class="main special">
-                <header class="major">
-                    <h2>My Trips</h2>
-                </header>
-                <p>Put trips here</p>
+                
+
+        <div class="container">
+            <a href="trip.html">
+            <img alt="Qries" src="https://media.dertouristik.com/exports/KuoniUK/ImageGalleryLightboxLarge/362629_ImageGalleryLightboxLarge.jpg"
+            width="400" height="250" class="image">
+            <div class="middle">
+              <div class="text">Click for more Details</div>
+            </div>
+            <h3>Oahu, Hawaii &nbsp &nbsp &nbsp &nbsp 16-21 OCT,2021</h3>
+            </a>
+        </div>
+        <hr>
+        <div class="container">
+            <a href="trip.html">
+            <img alt="Qries" src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
+            width="400" height="250" class="image">
+            <div class="middle">
+              <div class="text">Click for more Details</div>
+            </div>
+            <h3>Paris, France &nbsp &nbsp &nbsp &nbsp 20-27 March,2022</h3>
+            </a>
+        </div>
+        <hr>
+                
+        
                 <footer class="major">
-                    <ul class="actions special">
-                        <li><a href="generic.html" class="button">Learn More</a></li>
-                    </ul>
+                    
                 </footer>
             </section>
         </div>
@@ -49,6 +118,8 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+
+
 
 </body>
 </html>
