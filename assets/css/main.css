@@ -3812,9 +3812,9 @@ input, select, textarea {
 }
 .new {
 	background-color: #85CAB5 !important;
-	margin: 1rem 2rem;
+	margin-right: 2px;
 }
 .next {
 	background-color: #9BCCEF !important;
-	margin: 1rem 2rem;
+	margin-left: 2px;
 }
