@@ -3788,3 +3788,33 @@ input, select, textarea {
 			}
 
 		}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+.date {
+	background-color: rgba(209, 214, 222, 0.2);
+}
+.event {
+	background-color: white;
+	padding: 5px;
+}
+.schedule-list {
+	list-style-type: none;
+	text-align: left;
+}
+.with-div {
+	border-top: 1px solid black;
+}
+.new {
+	background-color: #85CAB5 !important;
+	margin: 1rem 2rem;
+}
+.next {
+	background-color: #9BCCEF !important;
+	margin: 1rem 2rem;
+}
