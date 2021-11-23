@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <link rel="shortcut icon" type="image/jpg" href="../images/weather-favicon.ico"/>
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style type="text/css">
+    .nav {
+  overflow: hidden;
+  background-color: #fff;  
+  align-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 110%;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a:hover{
+  background-color: #4CAF50;
+}
+</style>
     <body class="is-preload">
     <div id="wrapper">
         <nav id="nav">
@@ -39,6 +65,12 @@
                 </footer>
             </section>
         </div>
+    </div>
+    <div class="nav">
+        <a class="active" href="trips.html"><i class="fa fa-fw fa-home"></i></a>
+        <a href="packingList.html"><i class="fa fa-fw fa-list"></i></a>
+        <a href="flights.html"><i class="fa fa-fw fa-plane"></i></a>
+        <a href="account.html"><i class="fa fa-fw fa-user"></i></a>
     </div>
 
     <!-- Scripts -->
