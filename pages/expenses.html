@@ -11,7 +11,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style type="text/css">
-    .nav {
+
+.total {
+    background-color: pink;
+    width: 100%;
+    max-height: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.total h3 {
+    /* border: 5px solid green; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.total p {
+    /* border: 5px solid green; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.expenses {
+    /* border: 5px solid pink; */
+    padding: 20px 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.expenses ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+    /* border: 5px solid pink; */
+    height: 70px;
+    margin: 16px auto;
+    padding: 10px 0;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    box-shadow: 0 8px 32px 0 rgba( 25, 30, 135, 0.09 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+li h3 {
+    float: left;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.expense {
+    margin: auto;
+    padding: 5px 30px 5px 5px;
+    display: flex;
+    float: right;
+    margin: 0 auto;
+}
+
+.expense p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 0 0 0 8px;
+}
+
+.nav {
   overflow: hidden;
   background-color: #fff;  
   align-content: flex-end;
@@ -57,10 +136,39 @@ a:hover{
                 <header class="major">
                     <h2>Expenses</h2>
                 </header>
-                <p>Put expenses here</p>
+                <!-- <p>Put expenses here</p> -->
+                <div class="total">
+                    <h3>Total Balance</h3>
+                    <p>$960.00</p>
+                </div>
+
+                <div class="expenses">
+                    <ul>
+                        <li>
+                            <h3>Food</h3>
+                            <div class="expense">$260</div>
+                        </li>
+                        <li>
+                            <h3>Shopping</h3>
+                            <div class="expense">$100</div>
+                        </li>
+                        <li>
+                            <h3>Transportation</h3>
+                            <div class="expense">$200</div>
+                        </li>
+                        <li>
+                            <h3>Entertainment</h3>
+                            <div class="expense">$400</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="new" type="button">Add New Expense</button>
+
                 <footer class="major">
                     <ul class="actions special">
-                        <li><a href="generic.html" class="button">Learn More</a></li>
+                        <!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+                        <li></li>
                     </ul>
                 </footer>
             </section>
