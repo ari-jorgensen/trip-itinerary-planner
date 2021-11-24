@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <link rel="shortcut icon" type="image/jpg" href="../images/travel-favicon.ico"/>
+    <style>
+        div.major {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1px;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #fff;
+            align-content: flex-end;
+            position: fixed;
+            bottom: 0;
+            width: 110%;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 20px 35px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover{
+            background-color: #4CAF50;
+        }
+        #wrapper {
+            margin-bottom: 70px;
+        }
+    </style>
 </head>
     <body class="is-preload">
     <div id="wrapper">
@@ -28,17 +63,52 @@
         </header>
         <div id="main">
             <section id="travel" class="main special">
-                <header class="major">
-                    <h2>Travel Information</h2>
-                </header>
-                <p>Put travel info here</p>
-                <footer class="major">
-                    <ul class="actions special">
-                        <li><a href="generic.html" class="button">Learn More</a></li>
-                    </ul>
-                </footer>
+                <div class="travel-box">
+                    <h3>Oahu, Hawaii</h3>
+                    <div class="travel-info-div">
+                        <p>SFO -> HNL<br>10/16/21 @ 7:15AM</p>
+                        <div class="container">
+                            <button class="new" type="button">Edit</button>
+                            <button class="delete" type="button">Delete</button>
+                        </div>
+                    </div>
+                    <div class="travel-info-div">
+                        <p>HNL -> SFO<br>10/21/21 @ 6:05PM</p>
+                        <div class="container">
+                            <button class="new" type="button">Edit</button>
+                            <button class="delete" type="button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="travel-box">
+                    <h3>Paris, France</h3>
+                    <div class="travel-info-div">
+                        <p>SFO -> CDG<br>3/19/21 @ 2:45PM</p>
+                        <div class="container">
+                            <button class="new" type="button">Edit</button>
+                            <button class="delete" type="button">Delete</button>
+                        </div>
+                    </div>
+                    <div class="travel-info-div">
+                        <p>CDG -> SFO<br>3/28/21 @ 8:20PM</p>
+                        <div class="container">
+                            <button class="new" type="button">Edit</button>
+                            <button class="delete" type="button">Delete</button>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <div class="major">
+                <button class="new-travel" type="button">Add Travel Info</button>
+            </div>
         </div>
+    </div>
+    <div class="nav">
+        <a class="active" href="trips.html"><i class="fa fa-fw fa-home"></i></a>
+        <a href="packingList.html"><i class="fa fa-fw fa-list"></i></a>
+        <a href="flights.html"><i class="fa fa-fw fa-plane"></i></a>
+        <a href="account.html"><i class="fa fa-fw fa-user"></i></a>
     </div>
 
     <!-- Scripts -->

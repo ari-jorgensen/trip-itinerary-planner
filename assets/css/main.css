@@ -3812,9 +3812,30 @@ input, select, textarea {
 }
 .new {
 	background-color: #85CAB5 !important;
-	margin-right: 2px;
+	margin-right: 2rem;
+}
+.new-travel {
+	background-color: #85CAB5 !important;
+	width: 60%;
 }
 .next {
 	background-color: #9BCCEF !important;
 	margin-left: 2px;
+}
+.delete {
+	background-color: #E48585 !important;
+	margin-left: 2rem;
+	align-self: center;
+}
+#travel {
+	text-align: left;
+}
+.travel-box {
+	background-color: rgba(209, 214, 222, 0.4);
+	padding: 1rem;
+}
+.travel-info-div {
+	background-color: white;
+	margin: 1rem 0rem;
+	padding: 0.5rem;
 }
